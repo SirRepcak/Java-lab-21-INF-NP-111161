@@ -2,8 +2,8 @@ package Lab2;
 
 import java.util.Scanner;
 
-public class zadanie1 {
-    public static void main(String[] args) {
+public class Zadanie1 {
+    public static void tree(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wysokosc choinki: ");
         int h = scanner.nextInt();
@@ -17,7 +17,7 @@ public class zadanie1 {
                 System.out.print("*");
                 k++;
             }
-            System.out.println("");
+            System.out.println();
 
     }
 }}
