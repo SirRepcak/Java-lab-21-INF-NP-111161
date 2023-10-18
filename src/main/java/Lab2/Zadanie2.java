@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadanie2 {
 
-    public String quadratic_equation(){
+    public String quadraticEquation(){
 
         Scanner scanner  = new Scanner(System.in);
 

@@ -21,21 +21,18 @@ public class Zadanie4 {
         }
 
         int max_num = x[0];
-        for(int i=0;i<x_num;i++){
-            if (max_num<x[i]){
-                max_num= x[i];
-            }
-        }
 
         int min_num = x[0];
-        for(int i=0;i>x_num;i++){
-            if (min_num>x[i]){
-                min_num= x[i];
-            }
-        }
 
         double avg=0;
-        for (int i =0 ; i<x_num; i++){
+
+        for(int i=0; i < x_num; i++){
+            if (max_num < x[i]){
+                max_num = x[i];
+            }
+            if (min_num > x[i]){
+                min_num = x[i];
+            }
             avg += x[i];
         }
         avg=avg/x_num;

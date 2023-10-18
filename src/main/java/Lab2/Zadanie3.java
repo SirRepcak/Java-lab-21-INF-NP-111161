@@ -8,11 +8,10 @@ public class Zadanie3 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Podaj wartość w km/h: ");
+        System.out.print("Podaj wartość w mil/h: ");
 
         double mph  = scanner.nextDouble();
 
-        double kph = mph * 1.609344;
-        return kph;
+        return mph * 1.609344;
     }
 }
