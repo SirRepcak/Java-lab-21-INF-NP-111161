@@ -7,10 +7,9 @@ public class Zadanie1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wysokosc choinki: ");
         int h = scanner.nextInt();
-        int s;
 
         for(int i=1,k=0;i<=h;i++,k=0){
-            for(s=1;s<=h-i;s++){
+            for(int s=1;s<=h-i;s++){
                 System.out.print(" ");
         }
             while(k!=2*i-1) {

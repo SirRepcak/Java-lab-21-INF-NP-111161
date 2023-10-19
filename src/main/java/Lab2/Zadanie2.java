@@ -18,7 +18,7 @@ public class Zadanie2 {
       if (delta<0){
           return "Rownanie nie ma rozwiazan";
       }
-      if (delta==0){
+      else if (delta==0){
           double x = -(b/ 2*a) ;
           return "x=" + x;
       }

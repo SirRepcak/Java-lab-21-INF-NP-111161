@@ -8,8 +8,7 @@ public class Zadanie6 {
 
         Scanner scanner = new Scanner(System.in);
 
-        double value;
-        double ownCapital;
+        double value, ownCapital;
         int installmentNumber;
 
         do {

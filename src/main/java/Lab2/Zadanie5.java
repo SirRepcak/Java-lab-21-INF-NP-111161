@@ -34,10 +34,10 @@ public class Zadanie5 {
                 result=a*b;
                 break;
             case '%':
-                if(b!=0)
-                {result=a%b;}
-                else
-                {System.out.println("Nie można dzielić przez 0");}
+                if(b!=0) {
+                    result = a % b;
+                }else {
+                    System.out.println("Nie można dzielić przez 0");}
                 break;
         }
 
