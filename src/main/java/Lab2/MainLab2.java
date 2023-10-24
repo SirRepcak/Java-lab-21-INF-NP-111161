@@ -16,7 +16,7 @@ public class MainLab2 {
         //zadanie1.tree();
 
         //zadanie2
-        //System.out.println(zadanie2.quadraticEquation());
+       //System.out.println(zadanie2.quadraticEquation());
 
         //zadanie3
         //System.out.println("Jest to równe "+zadanie3.converter()+"mil/h");

@@ -3,10 +3,12 @@ package Lab2;
 import java.util.Scanner;
 
 public class Zadanie1 {
-    public static void tree(){
+    public void tree(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wysokosc choinki: ");
         int h = scanner.nextInt();
+
+        scanner.close();
 
         for(int i=1,k=0;i<=h;i++,k=0){
             for(int s=1;s<=h-i;s++){

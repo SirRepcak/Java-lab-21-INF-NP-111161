@@ -12,6 +12,8 @@ public class Zadanie3 {
 
         double mph  = scanner.nextDouble();
 
+        scanner.close();
+
         return mph * 1.609344;
     }
 }

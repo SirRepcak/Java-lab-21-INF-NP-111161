@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadanie6 {
 
-    static double installmentCalculator() {
+    public double installmentCalculator() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -31,6 +31,9 @@ public class Zadanie6 {
 
         System.out.println("Podaj wysokość wkładu własnego");
         ownCapital = scanner.nextDouble();
+
+        scanner.close();
+
         value -= ownCapital;
 
         if (installmentNumber <= 24) {
