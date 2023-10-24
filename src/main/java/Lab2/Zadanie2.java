@@ -14,6 +14,8 @@ public class Zadanie2 {
         double b = scanner.nextInt();
         double c = scanner.nextInt();
 
+        scanner.close();
+
       double delta= Math.pow(b,2) - 4 * a * c;
       if (delta<0){
           return "Rownanie nie ma rozwiazan";

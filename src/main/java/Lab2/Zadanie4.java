@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadanie4 {
 
-    static String comparision_site(){
+    public String comparision_site(){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -19,6 +19,8 @@ public class Zadanie4 {
         for (int i=0; i < x_num ;i++){
             x[i]= scanner.nextInt();
         }
+
+        scanner.close();
 
         int max_num = x[0];
 

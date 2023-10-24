@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Zadanie5 {
 
-    static double calculator() {
+    public double calculator() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj pierwszą liczbę: ");
@@ -15,6 +15,8 @@ public class Zadanie5 {
 
         System.out.println("Podaj drugą liczbę: ");
         double b = scanner.nextDouble();
+
+        scanner.close();
 
         double result = 0.0;
         switch (symbol){
