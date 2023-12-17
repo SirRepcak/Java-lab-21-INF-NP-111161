@@ -20,7 +20,6 @@ public class Zadanie4 {
             input= scanner.nextDouble();
 
             if(input == 5){
-                values.add(input);
                 break;
             }
 

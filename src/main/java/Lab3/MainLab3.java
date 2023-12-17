@@ -13,7 +13,7 @@ public class MainLab3 {
         //zadanie1.evenToOddComparison();
 
         //Zadanie2
-        //zadanie2.divisors();
+        zadanie2.divisors();
 
         //Zadanie3
         //zadanie3.guessGame();
