@@ -24,10 +24,11 @@ public class Zadanie2 {
           double x = -(b/ 2*a) ;
           return "x=" + x;
       }
-      else{
+      else /*if (delta>0)*/{
           double x1=(-b - Math.sqrt(delta)) / 2 * a ;
           double x2=(-b + Math.sqrt(delta)) / 2 * a;
           return "x1=" + x1 + " , x2=" + x2;
       }
+
     }
 }

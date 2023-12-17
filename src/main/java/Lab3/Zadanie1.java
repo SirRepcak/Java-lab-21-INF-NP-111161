@@ -13,35 +13,46 @@ public class Zadanie1 {
 
         scanner.close();
 
-        int[] even = new int[value+1];
-        int[] odd  = new int[value+1];
+        int[] cyfry = new int[String.valueOf(value).length()];
+
+        for (int i = cyfry.length -1 ; i >=0; i--){
+
+            cyfry[i] = value % 10;
+
+            value/=10;
+        }
+
+
+        int[] even = new int[cyfry.length];
+        int[] odd  = new int[cyfry.length];
         int eCount=0, oCount=0;
 
-        for(int i=0;i<=value;i++){
-            if (i % 2 == 0) {
-                even[eCount]=i;
+        for(int i= cyfry.length -1 ;i >= 0 ;i--){
+            if (cyfry[i] % 2 == 0 && cyfry[i]!=0) {
+                even[eCount]=cyfry[i];
                 eCount++;
                 //System.out.println("przypisano "+i+" do parzystych, na pozycji "+(eCount-1));
             }
-            else{
-                odd[oCount] = i;
+            else if (cyfry[i] % 2 != 0){
+                odd[oCount] = cyfry[i];
                 oCount++;
                 //System.out.println("przypisano "+i+" do nieparzystych, na pozycji "+(oCount-1));
             }
         }
 
-        double evenAvg = 0;
-        double oddAvg = 0;
+        double evenSum = 0;
+        double oddSum = 0;
 
-        for(int i=0;i<=eCount;i++){
-            evenAvg+=even[i];
+        for (int i = 0; i < eCount; i++) {
+            evenSum += even[i];
         }
-        evenAvg=evenAvg/eCount;
 
-        for(int i=0;i<=oCount;i++){
-            oddAvg+=even[i];
+        for (int i = 0; i < oCount; i++) {
+            oddSum += odd[i];
         }
-        oddAvg=oddAvg/oCount;
+
+        double evenAvg = (eCount > 0) ? evenSum / eCount : 0;
+        double oddAvg = (oCount > 0) ? oddSum / oCount : 0;
 
         System.out.println("Stosunek średniej liczb parzystych do średniej liczb nieparzystych, które zawiera liczba "+value+" wynosi");
         System.out.println(evenAvg+":"+oddAvg);
